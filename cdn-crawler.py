@@ -40,7 +40,7 @@ def stats(responses, last=100):
         return ("\t" + s).ljust(20)
 
     def f(s):
-        return "{:.3f}s".format(s)
+        return "{:.2f}ms".format(s * 1000)
 
     for prefix in sorted(responses):
         print(prefix)
@@ -119,7 +119,7 @@ def probe(url):
     t1 = time.time()
     print(
         url.ljust(100),
-        "{:.2f}s".format(t1 - t0),
+        "{:.2f}ms".format((t1 - t0) * 1000),
         str(r.headers.get("x-cache")).ljust(6),
         "Nginx" if r.headers.get("link") and not r.headers.get("x-cache") else "",
     )
