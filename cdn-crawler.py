@@ -157,8 +157,8 @@ def run():
             for url in urls:
                 c += 1
                 responses["www"].append(probe(url))
-                time.sleep(get_sleeptime())
-                responses["beta"].append(probe(url.replace("www.", "beta.")))
+                # time.sleep(get_sleeptime())
+                # responses["beta"].append(probe(url.replace("www.", "beta.")))
                 time.sleep(get_sleeptime())
                 if not c % get_report_every():
                     stats(responses)
