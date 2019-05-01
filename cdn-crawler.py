@@ -21,7 +21,7 @@ def get_urls(base_url, exclude=set()):
         if href in exclude:
             continue
         urls.append(href)
-        if len(urls) > 100:
+        if len(urls) > 200:
             break
 
     return urls

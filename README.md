@@ -1,3 +1,13 @@
+**UPDATE**
+
+**This started as an experiment to compare the difference of hitting
+`....peterbe.com` via a CDN or not via CDN.**
+
+**Now it's morphed into a simpler tool to just check on the CDN for
+one domain.**
+
+
+
 # peterbecom-cdn-crawl
 
 This is an experiment to see the performance difference between
